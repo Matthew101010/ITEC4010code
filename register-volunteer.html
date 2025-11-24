@@ -12,7 +12,7 @@
 <br>
 <h2 style="text-align: center;font-size: 50px;"><u>Register as Volunteer</u></h2>
 <div class="form-container">
-    <form>
+    <form action="index.html" method="get" >
         <br>
         <label for="fName">First Name:</label><br>
         <input type="text" name="fName" required><br>
@@ -28,9 +28,26 @@
         <label for="city">City:</label><br>
         <input type="text" id="city" name="city" required><br><br>
 
-        <label for="province">Province/Territory :</label><br>
-        <input type="text" id="province" name="province" required><br><br>
-
+        <label for="provAndTer">Province/Territory :</label><br>
+        <br>
+        <select style="font-size: 20px;" required>
+            <option value="">Select</option>
+            <option value="ontario">Ontario</option>
+            <option value="quebec">Quebec</option>
+            <option value="novaScotia">Nova Scotia</option>
+            <option value="newBrunswick">New Brunswick</option>
+            <option value="manitoba">Manitoba</option>
+            <option value="britishColumbia">British Columbia</option>
+            <option value="pei">PEI</option>
+            <option value="saskatchewan">Saskatchewan</option>
+            <option value="alberta">Alberta</option>
+            <option value="nl">NL</option>
+            <option value="northwestTerritories">Northwest Territories</option>
+            <option value="yukon">Yukon</option>
+            <option value="nunavut">Nunavut</option>
+        </select>
+<br>
+<br>
         <label for="pcode">Postal Code:</label><br>
         <input type="text" id="pcode" name="pcode" required><br><br>
         <h2 style="font-size: 30px;">Create your Username and Password:</h2><br>
