@@ -5,16 +5,30 @@ body {
 }
 
 header {
-    background: #045e9f;
+    background: red;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+footer {
+    background: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a:hover {
+     color: red;
+}
+
+.hero a:hover {
+    color: red;
+}
 
 .button1, .button2, .button3, .button4 {
   border: none;
-  color: red;
+  color: white;
   padding: 35px 69px;
   text-align: center;
   text-decoration: none;
@@ -30,6 +44,7 @@ header {
     padding: 60px;
 }
 
+
 .btn {
     background: #0077cc;
     color: white;
@@ -38,21 +53,22 @@ header {
 }
 
 .form-container {
-    width: 800px;
+    width: 50%;
     margin: auto;
-    background: white;
-    padding-left: 5px;
-    margin-top: 40px;
+    padding: 65px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-input, textarea, select {
-    width: 100%;
-    padding: 12px;
+form input {
+    width: 90%;     /* makes the input NOT reach the edge */
+    padding: 10px;
     margin: 8px 0;
-    display: inline-block;
-    max-width: 100%;   /* prevents overflow */
-    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
 
 .card {
     background: white;
@@ -60,4 +76,8 @@ input, textarea, select {
     margin: 20px auto;
     width: 80%;
     border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
 }
