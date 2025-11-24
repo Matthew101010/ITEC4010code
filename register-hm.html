@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register as Hiring Manager- Community Volunteer System</title>
+    <title>Community Volunteer System - Register as Hiring Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<header>
+    <h1 style="font-size: 80px;">Volunteer Hub</h1>
+</header>
+<br>
+<br>
+<h2 style="text-align: center;font-size: 50px;"><u>Register as Hiring Manager</u></h2>
 <div class="form-container">
-    <h2 style="text-align: center;font-size: 50px;">Register</h2>
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
+    <form action="index.html" method="get" >
+        <br>
+        <label for="fName">First Name:</label><br>
+        <input type="text" name="fName" required><br>
+        <label for="lName">Last Name:</label><br>
+        <input type="text" name="lName" required><br>
+        <label for="organization">Name of organization you work for:</label><br>
+        <input type="text" name="organization" required><br>
+        <label for="employeeID">Your EmployeeID:</label><br>
+        <input type="text" name="employeeID" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="Email" required><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+        <label for="street">Address:</label><br>
+        <input type="text" id="street" name="street" required><br><br>
 
-        <select required>
-            <option value="">Select Account Type</option>
-            <option value="volunteer">Volunteer</option>
-            <option value="organization">Organization</option>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="provAndTer">Province/Territory :</label><br>
+        <br>
+        <select style="font-size: 20px;" required>
+            <option value="">Select</option>
+            <option value="ontario">Ontario</option>
+            <option value="quebec">Quebec</option>
+            <option value="novaScotia">Nova Scotia</option>
+            <option value="newBrunswick">New Brunswick</option>
+            <option value="manitoba">Manitoba</option>
+            <option value="britishColumbia">British Columbia</option>
+            <option value="pei">PEI</option>
+            <option value="saskatchewan">Saskatchewan</option>
+            <option value="alberta">Alberta</option>
+            <option value="nl">NL</option>
+            <option value="northwestTerritories">Northwest Territories</option>
+            <option value="yukon">Yukon</option>
+            <option value="nunavut">Nunavut</option>
         </select>
-
-        <button type="submit">Create Account</button>
+<br>
+<br>
+        <label for="pcode">Postal Code:</label><br>
+        <input type="text" id="pcode" name="pcode" required><br><br>
+        <h2 style="font-size: 30px;">Create your Username and Password:</h2><br>
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="text" name="password" required><br>
+<br>
+<br>
+<br>
+<br>
+        <button style="font-size: 19px;" type="submit">Create Account</button>
     </form>
 </div>
 
+
+<br>
+<br>
+
+<footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
 </body>
 </html>
