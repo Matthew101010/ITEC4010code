@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register as Volunteer - Community Volunteer System</title>
+    <title>Community Volunteer System - Register as Volunteer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-    <h1>[Logo]</h1>
+    <h1 style="font-size: 80px;">Volunteer Hub</h1>
 </header>
 <br>
 <br>
@@ -15,11 +15,13 @@
     <form>
         <br>
         <label for="fName">First Name:</label><br>
-        <input type="fName" name="fName" required>
+        <input type="text" name="fName" required><br>
         <label for="lName">Last Name:</label><br>
-        <input type="text" name="lName" required>
+        <input type="text" name="lName" required><br>
         <label for="email">Email:</label><br>
-        <input type="email" name="Email" required>
+        <input type="email" name="Email" required><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
         <label for="street">Address:</label><br>
         <input type="text" id="street" name="street" required><br><br>
 
@@ -29,13 +31,27 @@
         <label for="province">Province/Territory :</label><br>
         <input type="text" id="province" name="province" required><br><br>
 
-        <label for="zip">Postal Code:</label><br>
-        <input type="text" id="zip" name="zip" required><br><br>
-        <input type="password" placeholder="Password" required>
-
-        <button type="submit">Create Account</button>
+        <label for="pcode">Postal Code:</label><br>
+        <input type="text" id="pcode" name="pcode" required><br><br>
+        <h2 style="font-size: 30px;">Create your Username and Password:</h2><br>
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="text" name="password" required><br>
+<br>
+<br>
+<br>
+<br>
+        <button style="font-size: 19px;" type="submit">Create Account</button>
     </form>
 </div>
 
+
+<br>
+<br>
+
+<footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
 </body>
 </html>
