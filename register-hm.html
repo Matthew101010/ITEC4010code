@@ -7,13 +7,13 @@
 <body>
 
 <header>
-    <h1 style="font-size: 80px;">Volunteer Hub</h1>
+    <img src="imageVH.png" alt="logo" width="300" height="100">
 </header>
 <br>
 <br>
 <h2 style="text-align: center;font-size: 50px;"><u>Register as Hiring Manager</u></h2>
 <div class="form-container">
-    <form action="index.html" method="get" >
+    <form id="formHR" action="index.html" method="get" >
         <br>
         <label for="fName">First Name:</label><br>
         <input type="text" name="fName" required><br>
@@ -23,6 +23,14 @@
         <input type="text" name="organization" required><br>
         <label for="employeeID">Your EmployeeID:</label><br>
         <input type="text" name="employeeID" required><br>
+        <label>Does your organization have offices in Canada?</label>
+        <br>
+        <label>Yes:</label>
+        <input type="radio" name="canada" value="yes" onclick="toggleButton()">
+        <br>
+        <label>No:</label>
+        <input type="radio" name="canada" value="no" onclick="toggleButton()">
+    <br><br>
         <label for="email">Email:</label><br>
         <input type="email" name="Email" required><br>
         <label for="phone">Phone Number:</label>
@@ -64,7 +72,7 @@
 <br>
 <br>
 <br>
-        <button style="font-size: 19px;" type="submit">Create Account</button>
+        <button style="font-size: 19px;" id="createBtn" disabled>Create Account</button>
     </form>
 </div>
 
@@ -75,5 +83,19 @@
 <footer>
     <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
 </footer>
+
+<script>
+function toggleButton() {
+  const yes = document.querySelector('input[value="yes"]').checked;
+  const button = document.getElementById('createBtn');
+
+  if (yes) {
+    button.disabled = false;   // enable button
+  } else {
+    button.disabled = true;    // disable button
+  }
+}
+</script>
 </body>
 </html>
+
