@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer System - Volunteer History of Volunteer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+            margin: 0; 
+        padding: 0;
+        width: 100%;
+        background-color: white;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+  background-color: blue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  font-size: 29px;
+  text-align: center;
+  padding: 16px 80px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.active{
+    background-color: green;
+}
+
+        /* Page Section */
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .history-table th, .history-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .history-table th {
+            background-color: red;
+            color: white;
+        }
+
+        .total-hours {
+            margin-top: 25px;
+            background: #fb3d3d;
+            padding: 20px;
+            border-left: 5px solid darkred;
+            font-size: 18px;
+            border-radius: 8px;
+            color:white;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<div class="top-bar">
+    <div class="left-space"></div>
+    <img src="imageVH.png" alt="logo" width="300" height="100" class="logo">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<br>
+<ul>
+<li><a href="vol-home.html">Home</a></li>
+<li><a href="vol-search.html">Browse Positions</a></li>
+<li><a href="vol-status.html">Status of Applications</a></li>
+<li><a href="vol-messages.html">Messages</a></li>
+<li><a href="vol-history.html" class="active">History</a></li>
+<li><a href="vol-profile.html">Profile</a></li>
+</ul>
+</header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1 style="text-align: center;font-size: 45px;"><u>Volunteer History & Completed Hours</u></h1>
+
+        <!-- History Table -->
+        <table class="history-table">
+            <tr>
+                <th>Volunteer Position</th>
+                <th>Organization</th>
+                <th>Date</th>
+                <th>Hours Completed</th>
+            </tr>
+            <tr>
+                <td>First Aid Volunteer</td>
+                <td>Hearts Soccer League</td>
+                <td>2025-07-19</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Event Usher</td>
+                <td>City Charity Run</td>
+                <td>2025-03-12</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Library Reading Assistant</td>
+                <td>Central Library</td>
+                <td>2024-09-17</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <!-- Total Hours -->
+        <div class="total-hours">
+            <strong>Total Completed Hours:</strong> 13
+        </div>
+    </div>
+
+    <footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
+<script>
+  function logout() {
+    window.location.href = "logged_out.html"; 
+  }
+</script>
+</body>
+</html>
