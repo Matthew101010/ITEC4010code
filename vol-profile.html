@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer System - Volunteer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+            margin: 0; 
+        padding: 0;
+        width: 100%;
+        background-color: white;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+  background-color: blue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  font-size: 29px;
+  text-align: center;
+  padding: 16px 80px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.active{
+    background-color: green;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+<div class="top-bar">
+    <div class="left-space"></div>
+    <img src="imageVH.png" alt="logo" width="300" height="100" class="logo">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<br>
+<ul>
+<li><a href="vol-home.html">Home</a></li>
+<li><a href="vol-search.html">Browse Positions</a></li>
+<li><a href="vol-status.html">Status of Applications</a></li>
+<li><a href="vol-messages.html">Messages</a></li>
+<li><a href="vol-history.html">History</a></li>
+<li><a href="vol-profile.html" class="active">Profile</a></li>
+</ul>
+</header>
+      
+<br>
+<br>
+<h2 style="text-align: center;font-size: 50px;"><u>My Profile</u></h2>
+<div class="form-container">
+    <form action="edit_profile.html" method="get" >
+        <br>
+        <label>First Name:</label><br>
+        <input type="text" value="John" disabled><br>
+        <label>Last Name:</label><br>
+        <input type="text" value="Doe" disabled><br>
+        <label>Email:</label><br>
+        <input type="email" value="johndoe1@yahoo.com" disabled><br>
+        <label>Phone Number:</label>
+        <input type="text" value="123-456-7890" disabled><br><br>
+        <label>Address:</label><br>
+        <input type="text" value="123 Bathurst Street" disabled><br><br>
+
+        <label>City:</label><br>
+        <input type="text" value="Toronto" disabled><br><br>
+
+        <label>Province/Territory :</label><br>
+        <input type="text" value="Ontario" disabled>
+<br>
+<br>
+        <label>Postal Code:</label><br>
+        <input type="text" value="M1A 2B3" disabled><br><br>
+        <h2 style="font-size: 30px;">Your Username and Password:</h2><br>
+        <label>Username:</label><br>
+        <input type="text" value="johndoe21" disabled><br>
+        <label>Password:</label><br>
+        <input type="text" value="password123" disabled><br>
+<br>
+<br>
+<br>
+<br>
+        <button style="font-size: 19px;" type="submit">Edit Profile</button>
+    </form>
+</div>
+
+    <footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
+<script>
+  function logout() {
+    window.location.href = "logged_out.html"; 
+  }
+</script>
+</body>
+</html>
