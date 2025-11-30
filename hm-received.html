@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer System - HR Manager: Recieved Applications</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+  background-color: blue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding: 16px 90px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.active{
+    background-color: green;
+}
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        table th {
+            background-color: red;
+            color: white;
+        }
+        .btn-view {
+            background-color: #28a745;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .status {
+            font-weight: bold;
+        }
+        .status.pending {
+            color: #ff9800;
+        }
+        .status.accepted {
+            color: #28a745;
+        }
+        .status.rejected {
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<div class="top-bar">
+    <div class="left-space"></div>
+    <img src="imageVH.png" alt="logo" width="300" height="100" class="logo">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<br>
+<ul>
+<li><a href="hm-home.html">Home</a></li>
+<li><a href="hm-posting.html">Create a posting</a></li>
+<li><a href="hm-received.html" class="active">Recieved Applications</a></li>
+<li><a href="hm-messages.html">Messages</a></li>
+<li><a href="hm-profile.html">Profile</a></li>
+</ul>
+</header>
+
+<h1 style="text-align: center;font-size: 45px;"><u>Recieved Applications</u></h1>
+
+<!-- Search Bar -->
+<div class="search-container">
+    <input type="text" placeholder="Search by Name of applicant...">
+    <button>Search</button>
+</div>
+<br>
+<br> 
+    <div class="container">
+
+        <table>
+            <tr>
+                <th>Applicant Name</th>
+                <th>Position Applied</th>
+                <th>Date Submitted</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Alex Johnson</td>
+                <td>Art Gallery Assistant</td>
+                <td>Nov 20, 2025</td>
+                <td class="status pending">Pending</td>
+                <td><a href="#" class="btn-view">View Application</a></td>
+            </tr>
+
+            <tr>
+                <td>Maria Santos</td>
+                <td>Park Clean-Up Volunteer</td>
+                <td>Nov 18, 2025</td>
+                <td class="status pending">Pending</td>
+                <td><a href="#" class="btn-view">View Application</a></td>
+            </tr>
+
+            <tr>
+                <td>James Lee</td>
+                <td>Senior Companion Volunteer</td>
+                <td>Nov 15, 2025</td>
+                <td class="status accepted">Accepted</td>
+                <td><a href="#" class="btn-view">View Application</a></td>
+            </tr>
+
+            <tr>
+                <td>Hannah Wright</td>
+                <td>Pending</td>
+                <td>Nov 10, 2025</td>
+                <td class="status rejected">Rejected</td>
+                <td><a href="#" class="btn-view">View Application</a></td>
+            </tr>
+        </table>
+
+    </div>
+<footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
+<script>
+  function logout() {
+    window.location.href = "logged_out.html"; 
+  }
+</script>
+</body>
+</html>
