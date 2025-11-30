@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,13 +42,13 @@ ul li a:hover {
     background-color: green;
 }
 
-        /* Page Layout */
+        
         .container {
             display: flex;
             height: calc(100vh - 60px);
         }
 
-        /* Sidebar */
+        
         .sidebar {
             width: 28%;
             background: white;
@@ -96,7 +96,7 @@ ul li a:hover {
             display: block;
         }
 
-        /* Main Chat Area */
+        
         .chat-area {
             width: 72%;
             display: flex;
@@ -118,7 +118,7 @@ ul li a:hover {
             overflow-y: auto;
         }
 
-        /* Messages */
+        
         .msg {
             max-width: 70%;
             padding: 10px;
@@ -139,7 +139,7 @@ ul li a:hover {
             border-right: 4px solid #1b8a2f;
         }
 
-        /* Message Input */
+        
         .chat-input {
             display: flex;
             padding: 15px;
@@ -183,7 +183,7 @@ ul li a:hover {
 <ul>
 <li><a href="hm-home.html">Home</a></li>
 <li><a href="hm-posting.html">Create a posting</a></li>
-<li><a href="hm-received.html">Recieved Applications</a></li>
+<li><a href="hm-received.html">Received Applications</a></li>
 <li><a href="hm-messages.html" class="active">Messages</a></li>
 <li><a href="hm-profile.html">Profile</a></li>
 </ul>
@@ -191,7 +191,7 @@ ul li a:hover {
 
     <div class="container">
 
-        <!-- Sidebar with message previews -->
+        
         <div class="sidebar">
             <h2>Messages</h2>
 
@@ -207,33 +207,33 @@ ul li a:hover {
 
         </div>
 
-        <!-- Chat Area -->
+        
         <div class="chat-area">
             <div class="chat-header">
-                Tom Dawn – City Food Bank
+                Tom Dawn – Holiday Event Volunteer
             </div>
 
             <div class="chat-messages">
 
-                <!-- Received message (HR Manager) -->
+                
                 <div class="msg sent ">
                     Hello! We reviewed your application for the Holiday Event Volunteer position.  
                     Are you available for an interview this week?
                 </div>
 
-                <!-- Sent message (Volunteer) -->
+                
                 <div class="msg received">
                     Hi! Yes, I am available. What day and time works best for you?
                 </div>
 
-                <!-- Received -->
+               
                 <div class="msg sent">
                     Great! How about Thursday at 2 PM?
                 </div>
 
             </div>
 
-            <!-- Message Input -->
+            
             <div class="chat-input">
                 <input type="text" placeholder="Type your message…">
                 <button>Send</button>
