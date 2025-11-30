@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer System - Create New Posting</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .btn-submit {
+            background-color:red;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn-submit:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="imageVH.png" alt="logo" width="300" height="100">
+</header>
+    
+    <div class="container">
+        <h1>Create New Posting</h1>
+
+        <form action="posting_created.html" method="get" >
+            <label for="title">Posting Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter the volunteer position title..." required>
+
+            <label for="department">Department / Program</label>
+            <select required>
+        <option value="">Category</option>
+        <option>Accounting and Finance</option>
+        <option>Activity and Peer Support</option>
+        <option>Arts and Crafts</option>
+        <option>Camp assistant</option>
+        <option>Childcare</option>
+        <option>Community Support</option>
+        <option>Education</option>
+        <option>Fundraising</option>
+        <option>Medical and Patient Care</option>
+         <option>IT</option>
+        <option>Other</option>
+    </select>
+
+            <label for="city">City</label>
+            <input type="text" id="location" name="location" required>
+
+        <label for="provAndTer">Province/Territory :</label><br>
+        <br>
+        <select required>
+            <option value="">Select</option>
+            <option value="ontario">Ontario</option>
+            <option value="quebec">Quebec</option>
+            <option value="novaScotia">Nova Scotia</option>
+            <option value="newBrunswick">New Brunswick</option>
+            <option value="manitoba">Manitoba</option>
+            <option value="britishColumbia">British Columbia</option>
+            <option value="pei">PEI</option>
+            <option value="saskatchewan">Saskatchewan</option>
+            <option value="alberta">Alberta</option>
+            <option value="nl">NL</option>
+            <option value="northwestTerritories">Northwest Territories</option>
+            <option value="yukon">Yukon</option>
+            <option value="nunavut">Nunavut</option>
+        </select>
+
+            <label for="type">Position Type</label>
+            <select id="type" name="type" required>
+                <option value="">-- Select Position Type --</option>
+                <option value="in-person">In-Person</option>
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+            </select>
+
+            <label for="hours">Time Commitment / Hours</label>
+            <input type="text" id="hours" name="hours" placeholder="e.g. 5 hours/week, 1 shift/week" required>
+
+            <label for="overview">Overview</label>
+            <textarea id="overview" name="overview" placeholder="Provide an overview of the volunteer role, responsibilities, expectations, and impact" required></textarea>
+
+            <label for="requirements">Requirements</label>
+            <textarea id="requirements" name="requirements" placeholder="List required skills, certificates, or other eligibility criteria"></textarea>
+
+            <label for="start">Start Date</label>
+            <input type="date" id="start" name="start">
+
+            <label for="end">End Date (Optional)</label>
+            <input type="date" id="end" name="end">
+
+            <button type="submit" class="btn-submit">Create Posting</button>
+        </form>
+    </div>
+
+<footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
+</body>
+</html>
