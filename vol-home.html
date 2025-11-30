@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volunteer System - Volunteer's Home dashboard </title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+ body {
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+  background-color: blue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  font-size: 29px;
+  text-align: center;
+  padding: 16px 80px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.active{
+    background-color: green;
+}
+</style>   
+</head>
+
+<body>
+<header>
+<div class="top-bar">
+    <div class="left-space"></div>
+    <img src="imageVH.png" alt="logo" width="300" height="100" class="logo">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<br>
+<ul>
+<li><a href="vol-home.html" class="active">Home</a></li>
+<li><a href="vol-search.html">Browse Positions</a></li>
+<li><a href="vol-status.html">Status of Applications</a></li>
+<li><a href="vol-messages.html">Messages</a></li>
+<li><a href="vol-history.html">History</a></li>
+<li><a href="vol-profile.html">Profile</a></li>
+</ul>
+</header>
+
+<h1 style="text-align: center;font-size: 55px;">Welcome John!</h1>
+<h2 style="text-align: center;font-size: 30px;">Make a positive impact in your community <br>
+  or anywhere in Canada<br>
+  by applying to volunteer positions today!</h2>
+<main>  
+
+    <section class="content">
+      <!-- HOME -->
+      <div id="home" class="view card">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px">
+          <div class="card">
+            <h3 style="font-size: 40px;"><u>Active applications</u></h3>
+            <p style="font-size: 29px;">You have <strong>2</strong> applications in progress</p>
+          </div>
+          <div class="card">
+            <h3 style="font-size: 40px;"><u>Messages</u></h3>
+            <p style="font-size: 29px;">You have <strong>2</strong> unread messages</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3 style="text-align: center;font-size: 40px;"><u>Recommended positions</u></h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+            <div class="position">
+              <div style="flex:1">
+                <div style="text-align: center;font-size: 29px;font-weight:700;color:red;">Community Food Bank helper— Pack & Deliver</div>
+                <div style="text-align: center;font-size: 29px;">3–4 hrs · Saturday · 4 km away</div>
+              </div>
+            </div>
+<br>
+<br>
+            <div class="position">
+              <div style="flex:1">
+                <div style="text-align: center;font-size: 29px;font-weight:700;color:red;">After School Tutor — Math</div>
+                <div style="text-align: center;font-size: 29px;">Weekly · 2 hrs/session · Remote option</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="position">
+              <div style="flex:1">
+                <div style="text-align: center;font-size: 29px;font-weight:700;color:red;">Mural Painter</div>
+                <div style="text-align: center;font-size: 29px;">4-6 hrs · Tuesday · 5km away</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+<br>
+            <div class="position">
+              <div style="flex:1">
+                <div style="text-align: center;font-size: 29px;font-weight:700;color:red;">Counselor-in-Training - Goulding community center</div>
+                <div style="text-align: center;font-size: 29px;">weekly · Wednesday-Friday · 2km away</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+          <h3 style="text-align: center;font-size: 40px;"><u>Positions You Already Applied For</u></h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+
+    <div class="card">
+    <h3 style="font-size: 29px;font-weight:700;color:red;">Community Clean-Up</h3>
+    <p style="font-size: 29px;">Status: Pending</p>
+    </div>
+    <div class="card">
+    <h3 style="font-size: 29px;font-weight:700;color:red;">Holiday Event Volunteer</h3>
+    <p style="font-size: 29px;">Status: Accepted</p>
+    </div>  
+      
+</section>
+</main>
+
+<footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
+<script>
+  function logout() {
+    window.location.href = "logged_out.html"; 
+  }
+</script>
+</body>
+</html>
