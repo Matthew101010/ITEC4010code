@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 form input {
-    width: 90%;     /* makes the input NOT reach the edge */
+    width: 90%;     
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -109,12 +109,12 @@ form label {
 .search-container {
     width: 100%;
     display: flex;
-    justify-content: center; /* centers horizontally */
+    justify-content: center; 
     margin-top: 10px;
 }
 
 .search-container input {
-    width: 300px; /* adjust size */
+    width: 300px; 
     padding: 8px;
     font-size: 14px;
 }
@@ -130,3 +130,4 @@ textarea {
             padding: 10px;
             box-sizing: border-box;
         }
+
