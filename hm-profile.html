@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer System - Hiring Manager Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+            margin: 0; 
+        padding: 0;
+        width: 100%;
+        background-color: white;
+        }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+  background-color: blue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding: 16px 90px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.active{
+    background-color: green;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+<div class="top-bar">
+    <div class="left-space"></div>
+    <img src="imageVH.png" alt="logo" width="300" height="100" class="logo">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<br>
+<ul>
+<li><a href="hm-home.html">Home</a></li>
+<li><a href="hm-posting.html">Create a posting</a></li>
+<li><a href="hm-received.html">Recieved Applications</a></li>
+<li><a href="hm-messages.html">Messages</a></li>
+<li><a href="hm-profile.html" class="active">Profile</a></li>
+</ul>
+</header>
+      
+<br>
+<br>
+<h2 style="text-align: center;font-size: 50px;"><u>My Profile</u></h2>
+<div class="form-container">
+    <form action="hm-edit_profile.html" method="get" >
+        <br>
+        <label>First Name:</label><br>
+        <input type="text" value="Jack" disabled><br>
+        <label>Last Name:</label><br>
+        <input type="text" value="Marler" disabled><br>
+        <label for="organization">Name of organization you work for:</label><br>
+        <input type="text" value="Google" disabled><br>
+        <label for="employeeID">Your EmployeeID:</label><br>
+        <input type="text" value="32457533" disabled><br>
+        <label for="email">Email:</label><br>
+        <input type="email" value="jackmarler45@gmail.com" disabled><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" value="234-567-8900" disabled><br><br>
+        <label for="street">Address:</label><br>
+        <input type="text" value="123 Bay street" disabled><br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" value="North York" disabled><br><br>
+
+        <label for="provAndTer">Province/Territory :</label><br>
+        <input type="text" value="Ontario" disabled><br><br>
+<br>
+<br>
+        <label>Postal Code:</label><br>
+        <input type="text" value="M2A 2B5" disabled><br><br>
+        <h2 style="font-size: 30px;">Your Username and Password:</h2><br>
+        <label>Username:</label><br>
+        <input type="text" value="jackmarler45" disabled><br>
+        <label>Password:</label><br>
+        <input type="text" value="password234" disabled><br>
+<br>
+<br>
+<br>
+<br>
+        <button style="font-size: 19px;" type="submit">Edit Profile</button>
+    </form>
+</div>
+
+    <footer>
+    <p style="text-align:center;font-size: 25px;">© 2025 Volunteer Hub</p>
+</footer>
+<script>
+  function logout() {
+    window.location.href = "logged_out.html"; 
+  }
+</script>
+</body>
+</html>
